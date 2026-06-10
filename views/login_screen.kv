@@ -46,7 +46,7 @@
                         rounded_rectangle: [self.x, self.y, self.width, self.height, dp(16)]
                         width: dp(0.8)
 
-                #  Logo circle
+                # Logo circle
                 BoxLayout:
                     size_hint_y: None
                     height: dp(80)
@@ -75,7 +75,7 @@
                                 allow_stretch: True
                                 
 
-                # App title
+                #  App title
                 Label:
                     text: "Smart Planner"
                     font_size: dp(28)
@@ -93,7 +93,7 @@
                     size_hint_y: None
                     height: dp(20)
 
-                #  Error message (hidden by default) 
+                # Error message (hidden by default) 
                 BoxLayout:
                     id: error_box
                     size_hint_y: None
@@ -193,7 +193,7 @@
                                 rounded_rectangle: [self.x, self.y, self.width, self.height, dp(8)]
                                 width: dp(1)
 
-                # Login button
+                # Login button 
                 Button:
                     text: "Login →"
                     font_size: dp(16)
@@ -223,7 +223,7 @@
                     color: 1, 1, 1, 1
                     on_press: root.go_to_signup()
 
-                # ── Hint ──
+                # Hint
                 Label:
                     text: "Hint: Vivian Akinsete / password123"
                     font_size: dp(12)

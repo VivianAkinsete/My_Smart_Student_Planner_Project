@@ -47,8 +47,9 @@ class LoginScreen(Screen):
         self._hide_error()
         self.manager.current = "signup"
 
-    #  Error helpers                                                     
-   
+    # ------------------------------------------------------------------ #
+    #  Error helpers                                                      #
+    # ------------------------------------------------------------------ #
 
     def _show_error(self, message: str) -> None:
         error_box   = self.ids.error_box
@@ -61,7 +62,9 @@ class LoginScreen(Screen):
         error_box = self.ids.error_box
         Animation(height=dp(0), opacity=0, duration=0.15).start(error_box)
 
-    #  Utility                                                           
+    # ------------------------------------------------------------------ #
+    #  Utility                                                            #
+    # ------------------------------------------------------------------ #
 
     @staticmethod
     def _get_app():
